@@ -1,8 +1,7 @@
 <?php
 require_once $_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog_before.php";
-// CModule::IncludeModule('iblock');
-// $IBLOCK_ID = 4;
 ?>
+
 <form class="form">
 	Форма обратной связи
 	<div class="input">
@@ -25,7 +24,8 @@ let success = form.querySelector('.success');
 
 $(".phone").mask("+7(999)999-99-99");
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) 
+{
     errors = true
     for (let val of required) {
         if (val.value === '') {
