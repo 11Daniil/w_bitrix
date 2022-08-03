@@ -42,6 +42,4 @@ function validate($validate)
 		  echo "Error: ".$el->LAST_ERROR;
 	}
 }
-validate($_POST);
-
 ?>

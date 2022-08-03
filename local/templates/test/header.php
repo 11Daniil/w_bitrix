@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 	<?$APPLICATION->ShowHead()?>
 </head>
-<body class="conteiner">
+<body class="container">
 <?$APPLICATION->ShowPanel();?> 
 <header>
     <div class="header">

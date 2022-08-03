@@ -9,7 +9,7 @@ body
 	line-height: 25px;
 }
 
-.conteiner
+.container
 {
 	width: 1200px;
 	margin: 0 auto 100PX;
@@ -90,13 +90,13 @@ input
 
 input+input{margin-left: 20px;}
 
-span
+/*span
 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-}
+}*/
 
 button
 {
@@ -147,7 +147,7 @@ a.selected{border-bottom: 1px solid #4B4F53;}
 
 .back
 {
-	display: block;
+	display: block
 	margin-top: 30px;
 	margin-bottom: 13PX;
 
@@ -156,7 +156,7 @@ a.selected{border-bottom: 1px solid #4B4F53;}
 .block__news__detail
 {
 	background-color: rgba(103, 115, 135, 0.1);
-	padding: 16px 20px 20px 20px;
+	padding: 1px 20px 20px 20px;
 	margin-top: 43px;
 }
 
@@ -205,3 +205,13 @@ a.selected{border-bottom: 1px solid #4B4F53;}
 }
 
 .gray{color: gray;}
+
+.date_stile
+{
+	font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+	color: rgba(103, 115, 135, 0.7);
+}
