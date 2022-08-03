@@ -14,15 +14,17 @@
 </head>
 <body class="conteiner">
 <?$APPLICATION->ShowPanel();?> 
-    <header>
-        <div class="header">
-           <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<header>
+    <div class="header">
+    	<a href="/">
+            <svg width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 29.6765C23.5533 29.6765 29.6765 23.5533 29.6765 16C29.6765 8.44668 23.5533 2.32352 16 2.32352C8.44671 2.32352 2.32355 8.44668 2.32355 16C2.32355 23.5533 8.44671 29.6765 16 29.6765Z" stroke="#4B4F53" stroke-width="3"/>
                 <path d="M34.5294 23.9412H32.7647V31H34.5294V23.9412Z" fill="#4B4F53"/>
                 <path d="M38.0588 23.9412H36.2941V31H38.0588V23.9412Z" fill="#4B4F53"/>
             </svg>
-            
-		<?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
+        </a>
+
+	<?$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", Array(
 		"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
 		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
 		"DELAY" => "N",	// Откладывать выполнение шаблона меню
@@ -35,10 +37,9 @@
 		"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
 		"ROOT_MENU_TYPE" => "main_menu",	// Тип меню для первого уровня
 		"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
-	),
-	false
-);?>
-
-        </div>
-    </header>
+		),
+		false
+	);?>
+    </div>
+</header>
 		

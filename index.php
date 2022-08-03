@@ -1,46 +1,35 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
-?><div class="flex">
+?>
+<div class="flex">
 	<div class="flex1">
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
-	)
-);?>
+		<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+			"AREA_FILE_SHOW" => "page",
+			"AREA_FILE_SUFFIX" => "inc",
+			"EDIT_TEMPLATE" => ""
+			)
+		);?>
 	</div>
 	<div class="flex1">
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
-	)
-);?>
+		<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+			"AREA_FILE_SHOW" => "page",
+			"AREA_FILE_SUFFIX" => "inc",
+			"EDIT_TEMPLATE" => ""
+			)
+		);?>
 	</div>
 	<div class="flex1">
-		 <?$APPLICATION->IncludeComponent(
-	"bitrix:main.include",
-	"",
-	Array(
-		"AREA_FILE_SHOW" => "page",
-		"AREA_FILE_SUFFIX" => "inc",
-		"EDIT_TEMPLATE" => ""
-	)
-);?>
+		<?$APPLICATION->IncludeComponent("bitrix:main.include","",Array(
+			"AREA_FILE_SHOW" => "page",
+			"AREA_FILE_SUFFIX" => "inc",
+			"EDIT_TEMPLATE" => ""
+			)
+		);?>
 	</div>
 </div>
 
-<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"main.news",
-	Array(
+<?$APPLICATION->IncludeComponent("bitrix:news.list","main.news",Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -122,11 +111,7 @@ $APPLICATION->SetTitle("Главная");
 	)
 );?>
 
-<?$APPLICATION->IncludeComponent(
-	"bitrix:main.feedback",
-	"",
-Array()
-);?>
+<?$APPLICATION->IncludeComponent("bitrix:main.feedback","",Array());?>
 
 <?
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');
