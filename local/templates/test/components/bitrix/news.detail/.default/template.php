@@ -8,7 +8,7 @@
 	<div class="date_stile">
 		<?
 		$arParams["DATE_CREATE"]="j F Y";
-		echo CIBlockFormatProperties::DateFormat($arParams["DATE_CREATE"], MakeTimeStamp($item['DATE_CREATE'], CSite::GetDateFormat()));
+		echo CIBlockFormatProperties::DateFormat($arParams["DATE_CREATE"], MakeTimeStamp($arResult['DATE_CREATE'], CSite::GetDateFormat()));
 		?>			
 	</div>
 	<div class="news-list">
