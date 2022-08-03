@@ -90,14 +90,6 @@ input
 
 input+input{margin-left: 20px;}
 
-/*span
-{
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
-}*/
-
 button
 {
 	margin-bottom: 50px;
@@ -142,7 +134,7 @@ a.selected{border-bottom: 1px solid #4B4F53;}
 {
 	margin-top: 64px;
 	background-color: rgba(103, 115, 135, 0.1);
-	padding: 16px 20px 20px 20px;
+	padding: 1px 20px 20px 20px;
 }
 
 .back
